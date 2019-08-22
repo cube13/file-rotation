@@ -24,7 +24,6 @@ RUN apt-get update \
 RUN  pip3 install awscli \
   && pip3 install --upgrade pip setuptools 
 
-#   git+https://github.com/aiven/pghoard.git@${PGHOARD_VERSION} \
 RUN apt-get -y remove gcc python2.7 
 RUN apt-get -y autoremove 
 RUN apt-get clean 
